@@ -5,26 +5,52 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Side Navbar with Icons</title>
+    <title>IndieSphere | Home</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
     <link rel="icon" type="image/x-icon" href="{% static 'images/favicon.ico' %}">
   </head>
+  <i class="fa-solid fa-music-note"></i>
   <body class="bg-gray-100 flex">
-    <nav class="bg-gray-900 h-screen w-32 text-white">
-      <ul>
-        <li class="flex items-center justify-center hover:bg-gray-700">
-          <a href="">Home</a>
+    
+    <nav class="bg-gray-900 h-screen w-64 text-white">
+      <div class="p-3 flex items-center justify-center">
+        <i class="fa-solid fa-bell p-1"></i>
+        <strong>IndieSphere</strong>
+      </div>
+      <hr class="p-1">
+      <ul class="flex-list align-items justify-center">
+        <li class="flex items-center hover:bg-gray-700">
+          <a href="">
+            <i class="fa-solid fa-house p-1"></i>Home
+          </a>
         </li>
         <li class="hover:bg-gray-700">
-          <a href=""><i class="fa-solid fa-music-note"></i>Music</a>
+          <a href="" class="">
+            <i class="fa fa-music p-1"></i>Music
+          </a>
         </li>
-        <li class="hover:bg-gray-700"><a href="">Genres</a></li>
-        <li class="hover:bg-gray-700"><a href="">My Library</a></li>
-        <li class="hover:bg-gray-700"><a href="">Settings</a></li>
+        <li class="hover:bg-gray-700">
+          <a href="" class="">
+            <i class="fa-solid fa-headphones p-1"></i>Genres
+          </a>
+        </li>
+        <li class="hover:bg-gray-700">
+          <a href="">
+            <i class="fa-solid fa-book p-1"></i>My Library
+          </a>
+        </li>
+        <li class="hover:bg-gray-700">
+          <a href="">
+            <i class="fa-solid fa-gear p-1"></i>Settings
+          </a>
+        </li>
       </ul>
     </nav>
 
     <!-- Main Content -->
-    <div class="flex-1 p-6"></div>
+    <div class="flex-1 p-6">
+      <div class="music-page grid"></div>
+    </div>
   </body>
 </html>
