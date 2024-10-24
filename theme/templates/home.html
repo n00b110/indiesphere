@@ -1,3 +1,5 @@
+{% load static %}
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -5,17 +7,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Side Navbar with Icons</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="icon" type="image/x-icon" href="{% static 'images/favicon.ico' %}">
   </head>
   <body class="bg-gray-100 flex">
     <nav class="bg-gray-900 h-screen w-32 text-white">
       <ul>
-        <li>
-          <a href=""><i class="fa-solid fa-house"></i>Home</a>
+        <li class="flex items-center justify-center hover:bg-gray-700">
+          <a href="">Home</a>
         </li>
-        <li><a href="">Music</a></li>
-        <li><a href="">Genres</a></li>
-        <li><a href="">My Library</a></li>
-        <li><a href="">Settings</a></li>
+        <li class="hover:bg-gray-700">
+          <a href=""><i class="fa-solid fa-music-note"></i>Music</a>
+        </li>
+        <li class="hover:bg-gray-700"><a href="">Genres</a></li>
+        <li class="hover:bg-gray-700"><a href="">My Library</a></li>
+        <li class="hover:bg-gray-700"><a href="">Settings</a></li>
       </ul>
     </nav>
 
