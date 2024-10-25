@@ -22,27 +22,37 @@
       <ul class="flex-list align-items justify-center">
         <li class="flex items-center hover:bg-gray-700">
           <a href="">
-            <i class="fa-solid fa-house p-1"></i>Home
+            <i class="fa-solid fa-house p-2"></i>Home
           </a>
         </li>
         <li class="hover:bg-gray-700">
           <a href="" class="">
-            <i class="fa fa-music p-1"></i>Music
+            <i class="fa fa-music p-2"></i>Music
           </a>
         </li>
         <li class="hover:bg-gray-700">
           <a href="" class="">
-            <i class="fa-solid fa-headphones p-1"></i>Genres
+            <i class="fa-solid fa-headphones p-2"></i>Genres
           </a>
         </li>
         <li class="hover:bg-gray-700">
           <a href="">
-            <i class="fa-solid fa-book p-1"></i>My Library
+            <i class="fa-solid fa-book p-2"></i>My Library
           </a>
         </li>
         <li class="hover:bg-gray-700">
           <a href="">
-            <i class="fa-solid fa-gear p-1"></i>Settings
+            <i class="fa-solid fa-gear p-2"></i>Settings
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <i class="fas fa-sign-in p-2"></i>Sign In
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <i class="fa-solid fa-person p-2"></i>Login
           </a>
         </li>
       </ul>
@@ -50,7 +60,14 @@
 
     <!-- Main Content -->
     <div class="flex-1 p-6">
-      <div class="music-page grid"></div>
+      <div class="music-page">
+        <h2 class=""><strong>Our Music</strong></h2>
+        <div class="grid-container grid p-2">
+          <div class="current-music">
+            <img src="{% static 'images/album-1.jpg' %}" alt="" class="rounded-lg max-h-80 max-w-80">
+          </div>
+        </div>
+      </div>
     </div>
   </body>
 </html>
