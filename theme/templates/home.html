@@ -12,7 +12,6 @@
   </head>
   <i class="fa-solid fa-music-note"></i>
   <body class="bg-gray-100 flex">
-    
     <nav class="bg-gray-900 h-screen w-64 text-white">
       <div class="p-3 flex items-center justify-center">
         <i class="fa-solid fa-bell p-1"></i>
@@ -59,12 +58,15 @@
     </nav>
 
     <!-- Main Content -->
-    <div class="flex-1 p-6">
+    <div class="p-6">
       <div class="music-page">
         <h2 class=""><strong>Our Music</strong></h2>
-        <div class="grid-container grid p-2">
-          <div class="current-music">
-            <img src="{% static 'images/album-1.jpg' %}" alt="" class="rounded-lg max-h-80 max-w-80">
+        <div class="grid-container grid grid-cols-4 p-2 gap-4">
+          <div class="current-music col-span-4">
+            <img src="{% static 'images/album-1.jpg' %}" alt="" class="rounded-lg max-h-80 max-w-80 object-fill hover:scale-110">
+          </div>
+          <div class="current-music col-span-4">
+            <img src="{% static 'images/album-2.jpg' %}" alt="" class="rounded-lg max-h-80 max-w-80 object-fill hover:scale-110">
           </div>
         </div>
       </div>
