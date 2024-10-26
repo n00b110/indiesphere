@@ -10,46 +10,45 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
     <link rel="icon" type="image/x-icon" href="{% static 'images/favicon.ico' %}">
   </head>
-  <i class="fa-solid fa-music-note"></i>
   <body class="bg-gray-100 flex">
-    <nav class="bg-gray-900 h-screen w-64 text-white">
+    <nav class="bg-zinc-800 h-screen w-80 text-white">
       <div class="p-3 flex items-center justify-center">
         <i class="fa-solid fa-bell p-1"></i>
-        <h1>IndieSphere</h1>
+        <h1 class="p-2">IndieSphere</h1>
       </div>
       <hr class="p-1">
       <ul class="flex-list align-items justify-center">
-        <li class="flex items-center hover:bg-gray-700">
+        <li class="flex items-center hover:bg-gray-700 p-2">
           <a href="">
             <i class="fa-solid fa-house p-2"></i>Home
           </a>
         </li>
-        <li class="hover:bg-gray-700">
+        <li class="hover:bg-gray-700 p-2">
           <a href="" class="">
             <i class="fa fa-music p-2"></i>Music
           </a>
         </li>
-        <li class="hover:bg-gray-700">
+        <li class="hover:bg-gray-700 p-2">
           <a href="" class="">
             <i class="fa-solid fa-headphones p-2"></i>Genres
           </a>
         </li>
-        <li class="hover:bg-gray-700">
+        <li class="hover:bg-gray-700 p-2">
           <a href="">
-            <i class="fa-solid fa-book p-2"></i>My Library
+            <i class="fa-solid fa-book p-2"></i>Library
           </a>
         </li>
-        <li class="hover:bg-gray-700">
+        <li class="hover:bg-gray-700 p-2">
           <a href="">
             <i class="fa-solid fa-gear p-2"></i>Settings
           </a>
         </li>
-        <li>
+        <li class="hover:bg-gray-700 p-2">
           <a href="">
             <i class="fas fa-sign-in p-2"></i>Sign In
           </a>
         </li>
-        <li>
+        <li class="hover:bg-gray-700 p-2">
           <a href="">
             <i class="fa-solid fa-person p-2"></i>Login
           </a>
@@ -58,18 +57,18 @@
     </nav>
 
     <!-- Main Content -->
-    <div class="p-6">
+    <div class="p-4">
       <div class="music-page">
         <h2 class=""><strong>Our Music</strong></h2>
         <div class="grid-container grid grid-cols-4 gap-4">
-          <div class="current-music col-span-4 row-span-2 relative inset-0">
-            <img src="{% static 'images/album-1.jpg' %}" alt="" class="w-full rounded-lg max-h-80 object-cover hover:blur-sm transition duration-300">
+          <div class="current-music col-span-4 row-span-2 relative inset-0 transition-all duration-300 hover:scale-101">
+            <img src="{% static 'images/album-1.jpg' %}" alt="" class="w-full rounded-lg max-h-80 object-cover">
             <div class="absolute inset-0 bg-transparent bg-opacity-50 flex flex-col justify-start space-y-2 p-10">
               <h3 class="text-white">Your Music</h3>
               <h3 class="text-white font-bold text-2xl">On Repeat</h3>
             </div>
           </div>
-          <div class="current-music relative inset-0 hover:blur-none">
+          <div class="current-music relative inset-0 transition hover:blur-sm">
             <img src="{% static 'images/album-2.jpg' %}" alt="" class="rounded-lg max-h-80">
             <div class="absolute inset-0 bg-transparent bg-opacity-50 flex flex-col items-center justify-center">
                 <h3 class=" text-white text-center text-2xl font-bold">Deep Focus</h3>
@@ -93,6 +92,31 @@
                 <h3 class=" text-white text-center text-2xl font-bold">Beach</h3>
             </div>
           </div>
+          <div class="current-music relative inset-0">
+            <img src="{% static 'images/album-7.jpg' %}" alt="" class="rounded-lg h-full">
+            <div class="absolute inset-0 bg-transparent bg-opacity-50 flex flex-col items-center justify-center">
+                <h3 class=" text-white text-center text-2xl font-bold">Classical Music</h3>
+            </div>
+          </div>
+          <div class="current-music relative inset-0">
+            <img src="{% static 'images/album-10.jpg' %}" alt="" class="rounded-lg max-h-80">
+            <div class="absolute inset-0 bg-transparent bg-opacity-50 flex flex-col items-center justify-center">
+                <h3 class=" text-white text-center text-2xl font-bold">Jazz</h3>
+            </div>
+          </div>
+          <div class="current-music relative inset-0">
+            <img src="{% static 'images/album-11.jpg' %}" alt="" class="rounded-lg max-h-80">
+            <div class="absolute inset-0 bg-transparent bg-opacity-50 flex flex-col items-center justify-center">
+                <h3 class=" text-white text-center text-2xl font-bold">Disco</h3>
+            </div>
+          </div>
+          <div class="current-music relative inset-0">
+            <img src="{% static 'images/album-4.jpg' %}" alt="" class="rounded-lg max-h-80">
+            <div class="absolute inset-0 bg-transparent bg-opacity-50 flex flex-col items-center justify-center">
+                <h3 class=" text-white text-center text-2xl font-bold">Techno</h3>
+            </div>
+          </div>
+          
         </div>
       </div>
     </div>
