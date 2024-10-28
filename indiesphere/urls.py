@@ -21,4 +21,5 @@ urlpatterns = [
     path('admin', admin.site.urls),
     path('__reload__', include("django_browser_reload.urls")),
     path('', views.home, name="home"), # index route
+    path('sign_up', views.sign_up, name="sign_up")
 ]
