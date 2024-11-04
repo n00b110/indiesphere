@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Web3 Music Streaming Store</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="bg-gray-900 text-white font-sans">
+    <div class="container mx-auto p-4">
+      <!-- Header Section -->
+      <header class="flex justify-between items-center mb-6">
+        <h1 class="text-3xl font-bold">Web3 Music</h1>
+        <nav class="space-x-4">
+          <a href="#" class="hover:text-gray-300">Home</a>
+          <a href="#" class="hover:text-gray-300">Library</a>
+          <a href="#" class="hover:text-gray-300">Marketplace</a>
+          <a href="#" class="hover:text-gray-300">Profile</a>
+        </nav>
+      </header>
+
+      <!-- Grid Layout -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <!-- Featured Artist/Album Section -->
+        <div class="col-span-1 md:col-span-2 bg-gray-800 p-4 rounded-lg">
+          <h2 class="text-2xl font-semibold mb-2">Featured Artist</h2>
+          <div class="flex items-center space-x-4">
+            <img
+              src="artist-image.jpg"
+              alt="Artist"
+              class="w-24 h-24 rounded-full object-cover"
+            />
+            <div>
+              <h3 class="text-xl font-bold">Artist Name</h3>
+              <p class="text-gray-400">Latest Album</p>
+              <button
+                class="mt-2 px-4 py-2 bg-purple-600 rounded hover:bg-purple-700"
+              >
+                Play
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Trending Tracks/Genres Section -->
+        <div class="bg-gray-800 p-4 rounded-lg">
+          <h2 class="text-2xl font-semibold mb-2">Trending Tracks</h2>
+          <ul class="space-y-2">
+            <li class="flex justify-between items-center">
+              <span>Track 1 - Artist</span>
+              <button class="px-2 py-1 bg-green-600 rounded hover:bg-green-700">
+                Play
+              </button>
+            </li>
+            <li class="flex justify-between items-center">
+              <span>Track 2 - Artist</span>
+              <button class="px-2 py-1 bg-green-600 rounded hover:bg-green-700">
+                Play
+              </button>
+            </li>
+            <li class="flex justify-between items-center">
+              <span>Track 3 - Artist</span>
+              <button class="px-2 py-1 bg-green-600 rounded hover:bg-green-700">
+                <i class="fa-solid fa-play"></i>Play
+              </button>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Song List Section -->
+      <div class="mt-6 bg-gray-800 p-4 rounded-lg">
+        <h2 class="text-2xl font-semibold mb-4">Popular Songs</h2>
+        <div
+          class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4"
+        >
+          <div class="bg-gray-700 p-4 rounded hover:bg-gray-600 transition">
+            <h3 class="font-semibold">Song Title</h3>
+            <p class="text-gray-400 text-sm">Artist Name</p>
+            <button
+              class="mt-2 px-3 py-1 bg-blue-600 rounded hover:bg-blue-700"
+            >
+              Buy
+            </button>
+          </div>
+          <!-- Repeat song cards as needed -->
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -9,3 +9,7 @@ def home(request):
 
 def sign_up(request):
     return render(request, 'signup.html')
+
+
+def library(request):
+    return render(request, 'library.html')
